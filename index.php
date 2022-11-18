@@ -23,5 +23,11 @@ foreach($numArray as $value){
     }
 }
 
-print_r($itemCountArray);
+asort($itemCountArray);
+
+$keyArray = array_keys($itemCountArray);
+
+$output = reset($keyArray);
+
+print_r($output);
 
